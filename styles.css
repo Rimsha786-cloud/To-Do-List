@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 1000px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#daySelect {
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#addTaskBtn {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#addTaskBtn:hover {
+    background-color: #218838;
+}
+
+#daysContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.day {
+    background-color: #f9f9a9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 250px;
+    text-align: left;
+}
+
+.day h2 {
+    margin-top: 0;
+    background-color: #fff27f;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.taskList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task {
+    background-color: #fff27f;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.task.completed {
+    text-decoration: line-through;
+}
+
+.task .actions {
+    display: flex;
+    gap: 10px;
+}
+
+.task .actions button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.task .actions .edit {
+    color: #007bff;
+}
+
+.task .actions .delete {
+    color: #dc3545;
+}
+
+.task .actions .complete {
+    color: #28a745;
+}
